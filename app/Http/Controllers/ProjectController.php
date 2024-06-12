@@ -29,8 +29,8 @@ class ProjectController extends Controller
         if(request("name")) {
             $query->where("name", "like", "%". request("name"). "%");
         }
-        if(request("email")) {
-            $query->where("email", "like", "%". request("email"). "%");
+        if(request("status")) {
+            $query->where("status", "like", "%". request("status"). "%");
         }
 
 
